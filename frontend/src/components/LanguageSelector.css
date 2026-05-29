@@ -1,0 +1,101 @@
+/* LanguageSelector.css */
+
+/* Container for the selector component */
+.language-selector {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.9rem 1.2rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.language-selector:hover {
+  background: rgba(13, 17, 23, 0.9);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Group wrapper for source and target selectors */
+.selector-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.selector-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+/* Fixed source language badge */
+.fixed-language {
+  padding: 0.4rem 0.8rem;
+  background: rgba(99, 102, 241, 0.15);
+  color: #c7d2fe;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 80px;
+  transition: background 0.25s ease;
+}
+
+.fixed-language:hover {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+/* Target language select styling */
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--panel-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.45rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='10'%20height='6'%20viewBox='0%200%2010%206'%3E%3Cpath%20fill='%23c7d2fe'%20d='M0%200l5%206%205-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 10px 6px;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.lang-select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.lang-select:hover {
+  border-color: var(--accent-hover);
+}
+
+/* Adjust layout for source and target groups */
+.source-group .fixed-language {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.target-group .lang-select {
+  min-width: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .language-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .selector-group {
+    width: 100%;
+  }
+}

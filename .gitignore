@@ -1,0 +1,66 @@
+# Maven / Java build output
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+
+build/
+.gradle/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+logs/
+
+# Specific log files (already covered by *.log but listed for clarity)
+compile.log
+test.log
+test_indent.log
+test_loop.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Maven wrapper (if not needed in VCS)
+.mvn/
+.mvnw*
+
+# Package distributions
+*.zip
+*.tar.gz
+*.tgz
+
+# Other generated files
+*.apk
+*.exe
+*.dll
+
+# Maven distribution (binary)
+apache-maven-3.9.6/
+
+maven-mvnd-1.0.5-windows-amd64
+
+# Build output
+target/
+
+# Frontend build artifacts
+frontend/dist/
+frontend/node_modules/
+
+# Test output files
+test_output.txt
