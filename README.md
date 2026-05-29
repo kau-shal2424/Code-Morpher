@@ -37,7 +37,7 @@ mvn clean install
 
 ## Running the Backend
 '''bash
-#backend
+# backend
 cd backend
 mvn clean install
 .\apache-maven-3.9.6\bin\mvn.cmd spring-boot:run
